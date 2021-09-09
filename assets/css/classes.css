@@ -1,0 +1,44 @@
+section.section{
+  min-height: 100vh;
+}
+
+.main-bg{
+  background-image: url(../img/fundo-dmw.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-color{
+  background-color: var(--background-color);
+}
+
+.main-content{
+  color: var(--light-gray-color);
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem var(--gap);
+}
+
+.grid h3{
+  font-size: 3rem;
+  position: relative;
+  padding-left: 5rem;
+  padding-bottom: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.grid h3::before{
+  counter-increment: grid-counter;
+  content: counter(grid-counter);
+  font-size: 7rem;
+  font-style: italic;
+  transform: rotate(5deg);
+  position: absolute;
+  top: -4rem;
+  left: -2rem;
+}
+
+.grid p{
+  font-size: 2rem;
+}
+
